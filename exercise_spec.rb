@@ -26,4 +26,11 @@ describe Exercise do
       Exercise.even_fibonacci(35).must_equal 4_613_732
     end
   end
+
+  describe "#fibonacci" do
+    it "can calculate the fibonacci sequence up to a given numer" do
+      Exercise.fibonacci(5).must_equal [1, 1, 2, 3, 5]
+      Exercise.fibonacci(8).must_equal [1, 1, 2, 3, 5, 8, 13, 21]
+    end
+  end
 end
